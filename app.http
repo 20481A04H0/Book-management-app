@@ -1,0 +1,59 @@
+###
+// API 1: Add a new book to the database
+POST http://localhost:5000/api/books
+Content-Type: application/json
+
+{
+  "title": "The Catcher in the Rye",
+  "author": 1,
+  "genre": 1,
+  "pages": 277,
+  "publishedDate": "1951-07-16"
+}
+
+###
+
+###
+// API 2: Get all books from the database
+GET http://localhost:5000/api/books
+Content-Type: application/json
+
+###
+
+###
+// API 3: Get a single book by its ID
+GET http://localhost:5000/api/books/1
+Content-Type: application/json
+
+###
+
+###
+// API 4: Update the details of a specific book based on its ID
+PUT http://localhost:5000/api/books/1
+Content-Type: application/json
+
+{
+  "title": "The Catcher in the Rye (Updated)",
+  "author": 2,
+  "genre": 2,
+  "pages": 300,
+  "publishedDate": "1951-08-01"
+}
+
+###
+
+###
+// API 5: Delete a book from the database by its ID
+DELETE http://localhost:5000/api/books/1
+Content-Type: application/json
+
+###
+
+###
+// API 6: Get books by specific filter (example, books with more than 200 pages)
+// You can customize this query as per your logic or database schema
+GET http://localhost:5000/api/books?minPages=200
+Content-Type: application/json
+
+###
+
